@@ -1,6 +1,10 @@
 <h1 align="center">Jellyfin for Android TV</h1>
 <h3 align="center">Part of the <a href="https://jellyfin.org">Jellyfin Project</a></h3>
 
+> This is the Spark Systems fork for Spark Media Services (SMS). It preserves
+> Jellyfin attribution and GPL-2.0 licensing; the complete corresponding source
+> is available from this fork.
+
 ---
 
 <p align="center">

@@ -6,10 +6,13 @@ plugins {
 }
 
 android {
+    // Keep the upstream source namespace to avoid a disruptive package refactor.
+    // The installable SMS application identity is intentionally independent.
 	namespace = "org.jellyfin.androidtv"
 	compileSdk = libs.versions.android.compileSdk.get().toInt()
 
 	defaultConfig {
+		applicationId = "com.sparksystems.sms.tv"
 		minSdk = libs.versions.android.minSdk.get().toInt()
 		targetSdk = libs.versions.android.targetSdk.get().toInt()
 
@@ -98,7 +101,7 @@ android {
 	}
 }
 
-base.archivesName.set("jellyfin-androidtv-v${project.getVersionName()}")
+base.archivesName.set("sms-android-tv-v${project.getVersionName()}")
 
 tasks.register("versionTxt") {
 	val path = layout.buildDirectory.asFile.get().resolve("version.txt")
